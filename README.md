@@ -10,8 +10,12 @@ NextJS  com Edge Functions + ReactJS
 TailwindCSS
  
 ## Banco de dados:
- 
+
 Supabase -> Provedor do PostgreSQL
+
+## Auth
+
+Clerk -> Provedor de Autênticação
  
 ## Prototipagem
  
@@ -24,5 +28,3 @@ Excalidraw -> Desenho de Fluxo
 ## Documentação
  
 Docussauros - GitBook
- 
- 
