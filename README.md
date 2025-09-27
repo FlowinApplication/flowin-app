@@ -17,6 +17,7 @@ Criar uma aplicação moderna (Next.js + Edge) para organizar e acompanhar ativi
 | Auth | Clerk | A configurar |
 | Banco | Supabase (PostgreSQL) | A configurar |
 | Docs Arquitetura | `/docs/ARCHITECTURE.md` | Em evolução |
+| Docs Routing | `/docs/ROUTING.md` | Em evolução |
 | Design / Inspiração | Figma / Lovable / v0 | Em uso esporádico |
 
 ## 📂 Estrutura (simplificada)
@@ -25,8 +26,12 @@ src/
 	app/
 		layout.tsx        # Root layout
 		page.tsx          # Landing inicial (template)
+		(auth)/           # Grupo de rotas protegidas (client guard)
+			layout.tsx      # Usa ProtectedLayout
+			home/page.tsx   # Página autenticada exemplo
 docs/
 	ARCHITECTURE.md     # Documento detalhado de arquitetura
+	ROUTING.MD			# Documento detalhado de roteamento
 ```
 
 Mais detalhes: ver `docs/ARCHITECTURE.md`.
@@ -58,8 +63,8 @@ SUPABASE_SERVICE_ROLE_KEY=eyJ...  # uso apenas server-side
 ```
 
 ## 🛣️ Roadmap Inicial
-- [ ] Configurar Clerk (`ClerkProvider`, rotas /log-in /sign-up)
-- [ ] Layout protegido `(protected)/home`
+- [x] Configurar Clerk (`ClerkProvider`, rotas /sign-in /sign-up)
+- [x] Layout protegido server `(auth)/layout.tsx`
 - [ ] Integração Supabase (client + tabela profiles)
 - [ ] Sincronizar usuário (webhook Clerk -> profile)
 - [ ] Criar modelo de atividade/hábito
