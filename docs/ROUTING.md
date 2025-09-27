@@ -18,12 +18,9 @@ Atualmente apenas rotas sob `/api/private(.*)` são protegidas pelo middleware.
 
 Arquivo: `src/middleware.ts`
 
-<div align="center">
-  <figure style="margin:32px auto;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:70vh;max-width:680px;">
-    <img src="./assets/Middleware%20Flow.png" alt="Fluxo do middleware protegendo rotas privadas" style="max-width:100%;height:auto;max-height:700px;object-fit:contain;border:1px solid #e5e7eb;border-radius:4px;" />
-    <figcaption style="margin-top:8px;font-size:12px;color:#666;">Figura 1 – Fluxo de decisão do middleware.</figcaption>
-  </figure>
-</div>
+
+<img src="./assets/Middleware%20Flow.png" alt="Fluxo do middleware protegendo rotas privadas" width="300" />
+<figcaption style="margin-top:8px;font-size:12px;color:#666;">Figura 1 – Fluxo de decisão do middleware.</figcaption>
 
 ## 3. Fluxo de Requisição (Sequência API Privada)
 
